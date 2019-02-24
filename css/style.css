@@ -188,6 +188,7 @@ footer {
 }
 
 .tests-container {
+	background-color: white;
 	background-image: url("../images/nyc_aerial.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
