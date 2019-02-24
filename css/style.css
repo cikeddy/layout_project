@@ -196,8 +196,8 @@ footer {
 	display: -webkit-flex;
 	display: flex; 
 	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
 }
 
 #team figure {
