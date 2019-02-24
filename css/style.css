@@ -1,4 +1,19 @@
 /* CSS Document */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
 
 main {
 	margin-top: 350px;
@@ -51,13 +66,17 @@ button {
 	margin: 20px 20px 20px 0px;
 }
 
-img {
+button:hover {
+	color: white;
+}
+
+.decorative img {
 	max-height: 50vh;
 	max-width: 70%;
 	display: block;
 }
 
-img.banner {	
+img .banner {	
 	min-width: 99%;
 	max-width: 99%;
 	max-height: inherit;
@@ -111,6 +130,7 @@ nav * {
 	left: 10px;
 	top: 300px;
 	display: inline-block;
+	transition: .5s;
 }
 
 .current {
@@ -126,7 +146,6 @@ footer *{
 	padding: 2vh 0;
 	background-color: #1E0303;
 	color:#EC2127;
-	height: inherit;
 	font-size: medium;
 	font-family:'Karma', serif;
 }
@@ -134,20 +153,20 @@ footer {
 	padding-left: 2vh;
 	background-color: #1E0303;
 	display: flex;
-	justify-content: center;
-
+	justify-content: space-around;
 	box-shadow: 0 0 25px 0 black;
 }
 
-div .gallery img {
-	min-width: 75%;
-	max-width: 80%;
+.gallery img {
+	height: auto;
+	max-width: 50%;
 }
 
-div .gallery {
+.gallery {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-basis: 0;
 }
 
 .tests-container .test h2 {
@@ -156,6 +175,8 @@ div .gallery {
 	background-color: white;
 	color: black;
 	padding: 10px;
+	width: auto;
+	position:static;
 }
 
 
