@@ -6,6 +6,7 @@ html {
 body {
     margin: 0 0 100px;
 }
+
 footer {
     position: absolute;
     left: 0;
@@ -70,13 +71,13 @@ button:hover {
 	color: white;
 }
 
-.decorative img {
+body .decorative {
 	max-height: 50vh;
 	max-width: 70%;
 	display: block;
 }
 
-img .banner {	
+body .banner {	
 	max-width: 100%;
 	justify-content: center;
 	margin-bottom: 16px;
