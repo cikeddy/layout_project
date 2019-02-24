@@ -77,9 +77,8 @@ button:hover {
 }
 
 img .banner {	
-	min-width: 99%;
-	max-width: 99%;
-	max-height: inherit;
+	max-width: 100%;
+	justify-content: center;
 	margin-bottom: 16px;
 }
 
@@ -197,6 +196,7 @@ footer {
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 #team figure {
