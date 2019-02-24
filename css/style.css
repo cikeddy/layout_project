@@ -1,10 +1,9 @@
 /* CSS Document */
 
-
 main {
 	margin-top: 350px;
 	background-color: #1E0303;
-	font-family:'Century Gothic', CenturyGothic, Arial, sans-serif;
+	font-family: 'Karma', serif;
 	padding: 30px 30px 30px 0px;
 	margin-left: 40px;
 	color: white;
@@ -12,9 +11,32 @@ main {
 	text-decoration: none;
 }
 
+
+main p, h3{
+	font-size: large;
+	margin-bottom: 16px;
+}
+
+main h1 {
+	font-size: xx-large;
+	margin-bottom: 16px;
+}
+
+main h2 {
+	font-size: x-large;
+	margin-bottom: 8px;
+}
+
+main h3 {
+	font-size: large;
+}
+
+main img {
+	margin-bottom: 16px;
+}
+
 body {
 	background-color: #1E0303;
-	font-family:'Century Gothic', CenturyGothic, Arial, sans-serif;
 }
 
 button {
@@ -39,16 +61,13 @@ img.banner {
 	min-width: 99%;
 	max-width: 99%;
 	max-height: inherit;
+	margin-bottom: 16px;
 }
 
 header img {
 	height: 50px;
 	padding: 20px;
 	margin-left: 40px;
-}
-figure img {
-	max-height: 10vh;
-	max-width: inherit;
 }
 
 
@@ -60,7 +79,9 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
 	align-items: center;
 	box-shadow: 0 0 25px 0 black;
 }
@@ -88,7 +109,7 @@ nav * {
 
 .skip-main:focus {
 	left: 10px;
-	top: 100px;
+	top: 300px;
 	display: inline-block;
 }
 
@@ -96,28 +117,91 @@ nav * {
 	text-transform: uppercase;
 }
 
+nav a:hover {
+	color: hsla(358,84%,53%,0.67);
+}
+
 footer *{
+	display: inline-block;
+	padding: 2vh 0;
 	background-color: #1E0303;
 	color:#EC2127;
-	height: 90px;
-	right: 0;
-  	bottom: 0;
-  	left: 0;
+	height: inherit;
+	font-size: medium;
+	font-family:'Karma', serif;
+}
+footer {
+	padding-left: 2vh;
+	background-color: #1E0303;
+	display: flex;
+	justify-content: center;
+
+	box-shadow: 0 0 25px 0 black;
 }
 
-footer p {
-	display: flex;
-	align-items: center;
+div .gallery img {
+	min-width: 75%;
+	max-width: 80%;
 }
 
-.gallery {
+div .gallery {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tests-container .test h2 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: white;
+	color: black;
+	padding: 10px;
+}
+
+
+.tests-container .test {
+	background-color: hsla(0,100%,0%,0.88); 
+	padding: 10px;
+	margin: 20px;
+	max-width: 25%;
+}
+
+.tests-container {
+	background-image: url("../images/nyc_aerial.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
+#team figure {
+	padding: 0 0 10px;
+}
 
+#team figure img {
+	margin-bottom: 8px;
+	max-height: 20vh;
+	max-width: inherit;
+}
 
+#team {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
+	justify-content: flex-start;
+	flex-direction: column;
+	}
+
+@media (prefers-reduced-motion: reduce) {
+a.skip-main{
+   -webkit-transition-property: none;
+   -moz-transition-property: none;
+   -o-transition-property: none;
+   transition-property: none;
+  }
+}
 
